@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.page-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #303133;
+  }
+}
+
+.filter-bar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.status-tag {
+  &.status-pending {
+    color: #e6a23c;
+    background: #fdf6ec;
+    border-color: #f5dab1;
+  }
+  &.status-approved {
+    color: #67c23a;
+    background: #f0f9eb;
+    border-color: #c2e7b0;
+  }
+  &.status-rejected {
+    color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+  }
+  &.status-waiting {
+    color: #409eff;
+    background: #ecf5ff;
+    border-color: #b3d8ff;
+  }
+  &.status-completed {
+    color: #67c23a;
+    background: #f0f9eb;
+    border-color: #c2e7b0;
+  }
+  &.status-cancelled {
+    color: #909399;
+    background: #f4f4f5;
+    border-color: #d3d4d6;
+  }
+  &.status-overdue {
+    color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+  }
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
