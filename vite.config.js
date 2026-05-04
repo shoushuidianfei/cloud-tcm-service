@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
+  base: '/cloud-tcm-service/',
   plugins: [vue()],
   resolve: {
     alias: {
